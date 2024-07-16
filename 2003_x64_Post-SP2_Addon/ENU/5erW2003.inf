@@ -1,0 +1,397 @@
+;------------------------------------------------------------;
+;          ***** 5eraph's Windows 2003 Addon *****           ;
+;  ***** for the Windows XP x64 post-SP2 Update Pack *****   ;
+;                                                            ;
+;                    version:  2019-08                       ;
+;____________________________________________________________;
+; Updated Files by George King for XP2ESD project
+; Files are updated to latest version
+; Some GPO that is delivered by this pack was commented
+; KB registry entries Update by Milk-Chan
+
+[Version]
+Signature = "$Windows NT$"
+
+[Optional Components]
+W2003Updates
+
+[W2003Updates]
+OptionDesc = "Windows 2003 Updates"
+Tip        = "5eraph's Windows 2003 Addon"
+Modes      = 0,1,2,3
+AddReg     = KB948496.AddReg,KB972554.AddReg,KB2518295.AddReg,KB2571621.AddReg,KB2772930.AddReg,KB3045685.AddReg,KB4457188.AddReg,KB4516878.AddReg,KB4508401.AddReg,KB4093255.AddReg
+
+[KB948496.AddReg]
+HKLM,"%SP3REG%\KB948496","Description",0,"%UPD% (KB948496)"
+HKLM,"%SP3REG%\KB948496","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB948496","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB948496","Type",0,"Update"
+HKLM,"%SP3REG%\KB948496\Filelist",,0x10
+HKLM,"%HFREG%\KB948496","Backup Dir",0,""
+HKLM,"%HFREG%\KB948496","Comments",0,"%UPD% (KB948496)"
+HKLM,"%HFREG%\KB948496","Fix Description",0,"%UPD% (KB948496)"
+HKLM,"%HFREG%\KB948496","Installed",0x10001,1
+HKLM,"%HFREG%\KB948496","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB948496","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB948496","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB948496","Valid",0x10001,1
+HKLM,"%HFREG%\KB948496\File 1","Flags",0,""
+HKLM,"%HFREG%\KB948496\File 1","New File",0,""
+HKLM,"%HFREG%\KB948496\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB948496\File 1","Old Link Date",0,""
+HKLM,"SYSTEM\CurrentControlSet\Services\Tcpip\Parameters","EnableTCPChimney",0x00010001,0
+HKLM,"SYSTEM\CurrentControlSet\Services\Tcpip\Parameters","EnableRSS",0x00010001,0
+HKLM,"SYSTEM\CurrentControlSet\Services\Tcpip\Parameters","EnableTCPA",0x00010001,0
+
+[KB972554.AddReg]
+HKLM,"%SP3REG%\KB972554","Description",0,"%SUPD% (KB972554)"
+HKLM,"%SP3REG%\KB972554","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB972554","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB972554","Type",0,"Update"
+HKLM,"%SP3REG%\KB972554\Filelist\0","BuildCheckSum",0,"7d247"
+HKLM,"%SP3REG%\KB972554\Filelist\0","BuildDate",0,"Wed Jul 01 19:09:43 2009"
+HKLM,"%SP3REG%\KB972554\Filelist\0","FileName",0,"asfarchiver.dll"
+HKLM,"%SP3REG%\KB972554\Filelist\0","Location",0,"%11%\windows media\server"
+HKLM,"%SP3REG%\KB972554\Filelist\0","Version",0,"9.1.1.5001"
+HKLM,"%SP3REG%\KB972554\Filelist\1","BuildCheckSum",0,"59bb47"
+HKLM,"%SP3REG%\KB972554\Filelist\1","BuildDate",0,"Wed Jul 01 19:09:43 2009"
+HKLM,"%SP3REG%\KB972554\Filelist\1","FileName",0,"wmsserver.dll"
+HKLM,"%SP3REG%\KB972554\Filelist\1","Location",0,"%11%\windows media\server"
+HKLM,"%SP3REG%\KB972554\Filelist\1","Version",0,"9.1.1.5001"
+HKLM,"%HFREG%\KB972554","Backup Dir",0,""
+HKLM,"%HFREG%\KB972554","Comments",0,"%SUPD% (KB972554)"
+HKLM,"%HFREG%\KB972554","Fix Description",0,"%SUPD% (KB972554)"
+HKLM,"%HFREG%\KB972554","Installed",0x10001,1
+HKLM,"%HFREG%\KB972554","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB972554","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB972554","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB972554","Valid",0x10001,1
+HKLM,"%HFREG%\KB972554\File 1","Flags",0,""
+HKLM,"%HFREG%\KB972554\File 1","New File",0,""
+HKLM,"%HFREG%\KB972554\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB972554\File 1","Old Link Date",0,""
+
+[KB2518295.AddReg]
+HKLM,"%SP3REG%\KB2518295","Description",0,"%SUPD% (KB2518295)"
+HKLM,"%SP3REG%\KB2518295","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB2518295","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB2518295","Type",0,"Update"
+HKLM,"%SP3REG%\KB2518295\Filelist\0","FileName",0,"certckpn.asp"
+HKLM,"%SP3REG%\KB2518295\Filelist\0","Location",0,"%11%\certsrv"
+HKLM,"%SP3REG%\KB2518295\Filelist\1","FileName",0,"certrqbi.asp"
+HKLM,"%SP3REG%\KB2518295\Filelist\1","Location",0,"%11%\certsrv"
+HKLM,"%SP3REG%\KB2518295\Filelist\2","FileName",0,"certrqma.asp"
+HKLM,"%SP3REG%\KB2518295\Filelist\2","Location",0,"%11%\certsrv"
+HKLM,"%SP3REG%\KB2518295\Filelist\3","FileName",0,"certrqxt.asp"
+HKLM,"%SP3REG%\KB2518295\Filelist\3","Location",0,"%11%\certsrv"
+HKLM,"%SP3REG%\KB2518295\Filelist\4","FileName",0,"certrsis.asp"
+HKLM,"%SP3REG%\KB2518295\Filelist\4","Location",0,"%11%\certsrv"
+HKLM,"%SP3REG%\KB2518295\Filelist\5","FileName",0,"certrspn.asp"
+HKLM,"%SP3REG%\KB2518295\Filelist\5","Location",0,"%11%\certsrv"
+HKLM,"%HFREG%\KB2518295","Backup Dir",0,""
+HKLM,"%HFREG%\KB2518295","Comments",0,"%SUPD% (KB2518295)"
+HKLM,"%HFREG%\KB2518295","Fix Description",0,"%SUPD% (KB2518295)"
+HKLM,"%HFREG%\KB2518295","Installed",0x10001,1
+HKLM,"%HFREG%\KB2518295","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB2518295","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB2518295","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB2518295","Valid",0x10001,1
+HKLM,"%HFREG%\KB2518295\File 1","Flags",0,""
+HKLM,"%HFREG%\KB2518295\File 1","New File",0,""
+HKLM,"%HFREG%\KB2518295\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB2518295\File 1","Old Link Date",0,""
+
+[KB2571621.AddReg]
+HKLM,"%SP3REG%\KB2571621","Description",0,"%SUPD% (KB2571621)"
+HKLM,"%SP3REG%\KB2571621","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB2571621","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB2571621","Type",0,"Update"
+HKLM,"%SP3REG%\KB2571621\Filelist\0","BuildCheckSum",0,"19629"
+HKLM,"%SP3REG%\KB2571621\Filelist\0","BuildDate",0,"Tue May 25 12:51:59 2010"
+HKLM,"%SP3REG%\KB2571621\Filelist\0","FileName",0,"w03a3409.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB2571621\Filelist\0","Location",0,"%11%"
+HKLM,"%SP3REG%\KB2571621\Filelist\0","Version",0,"5.2.3790.4715"
+HKLM,"%SP3REG%\KB2571621\Filelist\1","BuildCheckSum",0,"42a28"
+HKLM,"%SP3REG%\KB2571621\Filelist\1","BuildDate",0,"Wed Aug 10 09:25:03 2011"
+HKLM,"%SP3REG%\KB2571621\Filelist\1","FileName",0,"wins.exe"
+HKLM,"%SP3REG%\KB2571621\Filelist\1","Location",0,"%11%"
+HKLM,"%SP3REG%\KB2571621\Filelist\1","Version",0,"5.2.3790.4893"
+HKLM,"%SP3REG%\KB2571621\Filelist\2","BuildCheckSum",0,"2252c"
+HKLM,"%SP3REG%\KB2571621\Filelist\2","BuildDate",0,"Thu May 28 06:37:50 2009"
+HKLM,"%SP3REG%\KB2571621\Filelist\2","FileName",0,"winsevnt.dll"
+HKLM,"%SP3REG%\KB2571621\Filelist\2","Location",0,"%11%"
+HKLM,"%SP3REG%\KB2571621\Filelist\2","Version",0,"5.2.3790.4520"
+HKLM,"%SP3REG%\KB2571621\Filelist\3","BuildCheckSum",0,"16aee"
+HKLM,"%SP3REG%\KB2571621\Filelist\3","BuildDate",0,"Tue May 25 12:37:47 2010"
+HKLM,"%SP3REG%\KB2571621\Filelist\3","FileName",0,"w03a3409.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB2571621\Filelist\3","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB2571621\Filelist\3","Version",0,"5.2.3790.4715"
+HKLM,"%SP3REG%\KB2571621\Filelist\4","BuildCheckSum",0,"2b3ef"
+HKLM,"%SP3REG%\KB2571621\Filelist\4","BuildDate",0,"Wed Aug 10 09:09:27 2011"
+HKLM,"%SP3REG%\KB2571621\Filelist\4","FileName",0,"wins.exe"
+HKLM,"%SP3REG%\KB2571621\Filelist\4","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB2571621\Filelist\4","Version",0,"5.2.3790.4893"
+HKLM,"%SP3REG%\KB2571621\Filelist\5","BuildCheckSum",0,"213ef"
+HKLM,"%SP3REG%\KB2571621\Filelist\5","BuildDate",0,"Thu May 28 06:26:13 2009"
+HKLM,"%SP3REG%\KB2571621\Filelist\5","FileName",0,"winsevnt.dll"
+HKLM,"%SP3REG%\KB2571621\Filelist\5","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB2571621\Filelist\5","Version",0,"5.2.3790.4520"
+HKLM,"%HFREG%\KB2571621","Backup Dir",0,""
+HKLM,"%HFREG%\KB2571621","Comments",0,"%SUPD% (KB2571621)"
+HKLM,"%HFREG%\KB2571621","Fix Description",0,"%SUPD% (KB2571621)"
+HKLM,"%HFREG%\KB2571621","Installed",0x10001,1
+HKLM,"%HFREG%\KB2571621","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB2571621","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB2571621","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB2571621","Valid",0x10001,1
+HKLM,"%HFREG%\KB2571621\File 1","Flags",0,""
+HKLM,"%HFREG%\KB2571621\File 1","New File",0,""
+HKLM,"%HFREG%\KB2571621\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB2571621\File 1","Old Link Date",0,""
+
+[KB2772930.AddReg]
+HKLM,"%SP3REG%\KB2772930","Description",0,"%SUPD% (KB2772930)"
+HKLM,"%SP3REG%\KB2772930","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB2772930","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB2772930","Type",0,"Update"
+HKLM,"%SP3REG%\KB2772930\Filelist\0","BuildCheckSum",0,"2e918b"
+HKLM,"%SP3REG%\KB2772930\Filelist\0","BuildDate",0,"Sat Feb 23 10:59:43 2013"
+HKLM,"%SP3REG%\KB2772930\Filelist\0","FileName",0,"ntdsa.dll" ;OBSOLETE
+HKLM,"%SP3REG%\KB2772930\Filelist\0","Location",0,"%11%"
+HKLM,"%SP3REG%\KB2772930\Filelist\0","Version",0,"5.2.3790.5130"
+HKLM,"%SP3REG%\KB2772930\Filelist\1","BuildCheckSum",0,"19dca"
+HKLM,"%SP3REG%\KB2772930\Filelist\1","BuildDate",0,"Sat Feb 23 10:59:43 2013"
+HKLM,"%SP3REG%\KB2772930\Filelist\1","FileName",0,"ntdsatq.dll"
+HKLM,"%SP3REG%\KB2772930\Filelist\1","Location",0,"%11%"
+HKLM,"%SP3REG%\KB2772930\Filelist\1","Version",0,"5.2.3790.5130"
+HKLM,"%SP3REG%\KB2772930\Filelist\2","BuildCheckSum",0,"11b43"
+HKLM,"%SP3REG%\KB2772930\Filelist\2","BuildDate",0,"Tue Jan 29 20:00:44 2013"
+HKLM,"%SP3REG%\KB2772930\Filelist\2","FileName",0,"w03a3409.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB2772930\Filelist\2","Location",0,"%11%"
+HKLM,"%SP3REG%\KB2772930\Filelist\2","Version",0,"5.2.3790.5115"
+HKLM,"%SP3REG%\KB2772930\Filelist\3","BuildCheckSum",0,"17ba7e"
+HKLM,"%SP3REG%\KB2772930\Filelist\3","BuildDate",0,"Sat Feb 23 11:00:10 2013"
+HKLM,"%SP3REG%\KB2772930\Filelist\3","FileName",0,"ntdsa.dll" ;OBSOLETE
+HKLM,"%SP3REG%\KB2772930\Filelist\3","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB2772930\Filelist\3","Version",0,"5.2.3790.5130"
+HKLM,"%SP3REG%\KB2772930\Filelist\4","BuildCheckSum",0,"13358"
+HKLM,"%SP3REG%\KB2772930\Filelist\4","BuildDate",0,"Sat Feb 23 11:00:11 2013"
+HKLM,"%SP3REG%\KB2772930\Filelist\4","FileName",0,"ntdsatq.dll"
+HKLM,"%SP3REG%\KB2772930\Filelist\4","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB2772930\Filelist\4","Version",0,"5.2.3790.5130"
+HKLM,"%SP3REG%\KB2772930\Filelist\5","BuildCheckSum",0,"143c7"
+HKLM,"%SP3REG%\KB2772930\Filelist\5","BuildDate",0,"Tue Jan 29 19:51:38 2013"
+HKLM,"%SP3REG%\KB2772930\Filelist\5","FileName",0,"w03a3409.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB2772930\Filelist\5","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB2772930\Filelist\5","Version",0,"5.2.3790.5115"
+HKLM,"%HFREG%\KB2772930","Backup Dir",0,""
+HKLM,"%HFREG%\KB2772930","Comments",0,"%SUPD% (KB2772930)"
+HKLM,"%HFREG%\KB2772930","Fix Description",0,"%SUPD% (KB2772930)"
+HKLM,"%HFREG%\KB2772930","Installed",0x10001,1
+HKLM,"%HFREG%\KB2772930","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB2772930","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB2772930","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB2772930","Valid",0x10001,1
+HKLM,"%HFREG%\KB2772930\File 1","Flags",0,""
+HKLM,"%HFREG%\KB2772930\File 1","New File",0,""
+HKLM,"%HFREG%\KB2772930\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB2772930\File 1","Old Link Date",0,""
+
+[KB3045685.AddReg]
+; "Common Log File System" is under "Other Network File and Print Services."  R2 only.
+HKLM,"%SP3REG%\KB3045685","Description",0,"%SUPD% (KB3045685)"
+HKLM,"%SP3REG%\KB3045685","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB3045685","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB3045685","Type",0,"Update"
+HKLM,"%SP3REG%\KB3045685\Filelist\0","BuildCheckSum",0,"59ed4"
+HKLM,"%SP3REG%\KB3045685\Filelist\0","BuildDate",0,"Wed Apr 08 20:07:14 2015"
+HKLM,"%SP3REG%\KB3045685\Filelist\0","FileName",0,"clfs.sys" ;OBSOLETE
+HKLM,"%SP3REG%\KB3045685\Filelist\0","Location",0,"%10%\ServicePackFiles\ServicePackCache\Cmpnents\R2"
+HKLM,"%SP3REG%\KB3045685\Filelist\0","Version",0,"5.2.3790.5602"
+HKLM,"%SP3REG%\KB3045685\Filelist\1","BuildCheckSum",0,"1eecb"
+HKLM,"%SP3REG%\KB3045685\Filelist\1","BuildDate",0,"Thu Apr 09 13:16:02 2015"
+HKLM,"%SP3REG%\KB3045685\Filelist\1","FileName",0,"clfsw32.dll"
+HKLM,"%SP3REG%\KB3045685\Filelist\1","Location",0,"%10%\ServicePackFiles\ServicePackCache\Cmpnents\R2"
+HKLM,"%SP3REG%\KB3045685\Filelist\1","Version",0,"5.2.3790.5602"
+HKLM,"%SP3REG%\KB3045685\Filelist\2","BuildCheckSum",0,"59ed4"
+HKLM,"%SP3REG%\KB3045685\Filelist\2","BuildDate",0,"Wed Apr 08 20:07:14 2015"
+HKLM,"%SP3REG%\KB3045685\Filelist\2","FileName",0,"clfs.sys" ;OBSOLETE
+HKLM,"%SP3REG%\KB3045685\Filelist\2","Location",0,"%11%"
+HKLM,"%SP3REG%\KB3045685\Filelist\2","Version",0,"5.2.3790.5602"
+HKLM,"%SP3REG%\KB3045685\Filelist\3","BuildCheckSum",0,"1eecb"
+HKLM,"%SP3REG%\KB3045685\Filelist\3","BuildDate",0,"Thu Apr 09 13:16:02 2015"
+HKLM,"%SP3REG%\KB3045685\Filelist\3","FileName",0,"clfsw32.dll"
+HKLM,"%SP3REG%\KB3045685\Filelist\3","Location",0,"%11%"
+HKLM,"%SP3REG%\KB3045685\Filelist\3","Version",0,"5.2.3790.5602"
+HKLM,"%HFREG%\KB3045685","Backup Dir",0,""
+HKLM,"%HFREG%\KB3045685","Comments",0,"%SUPD% (KB3045685)"
+HKLM,"%HFREG%\KB3045685","Fix Description",0,"%SUPD% (KB3045685)"
+HKLM,"%HFREG%\KB3045685","Installed",0x10001,1
+HKLM,"%HFREG%\KB3045685","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB3045685","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB3045685","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB3045685","Valid",0x10001,1
+HKLM,"%HFREG%\KB3045685\File 1","Flags",0,""
+HKLM,"%HFREG%\KB3045685\File 1","New File",0,""
+HKLM,"%HFREG%\KB3045685\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB3045685\File 1","Old Link Date",0,""
+
+[KB4093255.AddReg]
+HKLM,"%SP3REG%\KB4093255","Description",0,"%SUPD% (KB4093255)"
+HKLM,"%SP3REG%\KB4093255","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB4093255","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB4093255","Type",0,"Update"
+HKLM,"%SP3REG%\KB4093255\Filelist\0","BuildCheckSum",0,"2f3bf1"
+HKLM,"%SP3REG%\KB4093255\Filelist\0","BuildDate",0,"Wed Mar 07 2018 14:35:48"
+HKLM,"%SP3REG%\KB4093255\Filelist\0","FileName",0,"ntdsa.dll"
+HKLM,"%SP3REG%\KB4093255\Filelist\0","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4093255\Filelist\0","Version",0,"5.2.3790.6277"
+HKLM,"%SP3REG%\KB4093255\Filelist\1","BuildCheckSum",0,"1820db"
+HKLM,"%SP3REG%\KB4093255\Filelist\1","BuildDate",0,"Wed Mar 07 2018 14:35:48"
+HKLM,"%SP3REG%\KB4093255\Filelist\1","FileName",0,"ntdsa.dll"
+HKLM,"%SP3REG%\KB4093255\Filelist\1","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB4093255\Filelist\1","Version",0,"5.2.3790.6277"
+HKLM,"%HFREG%\KB4093255","Backup Dir",0,""
+HKLM,"%HFREG%\KB4093255","Comments",0,"%SUPD% (KB4093255)"
+HKLM,"%HFREG%\KB4093255","Fix Description",0,"%SUPD% (KB4093255)"
+HKLM,"%HFREG%\KB4093255","Installed",0x10001,1
+HKLM,"%HFREG%\KB4093255","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB4093255","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB4093255","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB4093255","Valid",0x10001,1
+HKLM,"%HFREG%\KB4093255\File 1","Flags",0,""
+HKLM,"%HFREG%\KB4093255\File 1","New File",0,""
+HKLM,"%HFREG%\KB4093255\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB4093255\File 1","Old Link Date",0,""
+
+[KB4457188.AddReg]
+HKLM,"%SP3REG%\KB4457188","Description",0,"%SUPD% (KB4457188)"
+HKLM,"%SP3REG%\KB4457188","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB4457188","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB4457188","Type",0,"Update"
+HKLM,"%SP3REG%\KB4457188\Filelist\0","BuildCheckSum",0,"cd075"
+HKLM,"%SP3REG%\KB4457188\Filelist\0","BuildDate",0,"Thu Sep 13 17:43:02 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\0","FileName",0,"dns.exe"
+HKLM,"%SP3REG%\KB4457188\Filelist\0","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4457188\Filelist\0","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\1","BuildCheckSum",0,"4678"
+HKLM,"%SP3REG%\KB4457188\Filelist\1","BuildDate",0,"Thu Sep 13 17:43:02 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\1","FileName",0,"dnsperf.dll"
+HKLM,"%SP3REG%\KB4457188\Filelist\1","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4457188\Filelist\1","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\2","FileName",0,"dnsperf.h"
+HKLM,"%SP3REG%\KB4457188\Filelist\2","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4457188\Filelist\3","FileName",0,"dnsperf.ini"
+HKLM,"%SP3REG%\KB4457188\Filelist\3","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4457188\Filelist\4","BuildCheckSum",0,"7ea85"
+HKLM,"%SP3REG%\KB4457188\Filelist\4","BuildDate",0,"Thu Sep 13 17:28:22 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\4","FileName",0,"mswsock.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB4457188\Filelist\4","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4457188\Filelist\4","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\5","BuildCheckSum",0,"180aa"
+HKLM,"%SP3REG%\KB4457188\Filelist\5","BuildDate",0,"Tue Sep 11 00:39:05 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\5","FileName",0,"w03a3409.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB4457188\Filelist\5","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4457188\Filelist\5","Version",0,"5.2.3790.5233"
+HKLM,"%SP3REG%\KB4457188\Filelist\6","BuildCheckSum",0,"56a17"
+HKLM,"%SP3REG%\KB4457188\Filelist\6","BuildDate",0,"Tue Sep 11 00:38:10 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\6","FileName",0,"afd.sys"     ;OBSOLETE
+HKLM,"%SP3REG%\KB4457188\Filelist\6","Location",0,"%12%"
+HKLM,"%SP3REG%\KB4457188\Filelist\6","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\7","BuildCheckSum",0,"c6270"
+HKLM,"%SP3REG%\KB4457188\Filelist\7","BuildDate",0,"Tue Sep 11 00:39:05 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\7","FileName",0,"tcpip.sys"     ;OBSOLETE
+HKLM,"%SP3REG%\KB4457188\Filelist\7","Location",0,"%12%"
+HKLM,"%SP3REG%\KB4457188\Filelist\7","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\8","BuildCheckSum",0,"6f17d"
+HKLM,"%SP3REG%\KB4457188\Filelist\8","BuildDate",0,"Tue Sep 11 00:12:42 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\8","FileName",0,"tcpip6.sys"     ;OBSOLETE (same in update pack)
+HKLM,"%SP3REG%\KB4457188\Filelist\8","Location",0,"%12%"
+HKLM,"%SP3REG%\KB4457188\Filelist\8","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\9","BuildCheckSum",0,"9a19"
+HKLM,"%SP3REG%\KB4457188\Filelist\9","BuildDate",0,"Thu Sep 13 17:43:04 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\9","FileName",0,"dnsperf.dll"
+HKLM,"%SP3REG%\KB4457188\Filelist\9","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB4457188\Filelist\9","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\10","BuildCheckSum",0,"3a2a6"
+HKLM,"%SP3REG%\KB4457188\Filelist\10","BuildDate",0,"Thu Sep 13 17:31:37 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\10","FileName",0,"mswsock.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB4457188\Filelist\10","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB4457188\Filelist\10","Version",0,"5.2.3790.6527"
+HKLM,"%SP3REG%\KB4457188\Filelist\11","BuildCheckSum",0,"c19f"
+HKLM,"%SP3REG%\KB4457188\Filelist\11","BuildDate",0,"Thu Sep 13 17:43:04 2018"
+HKLM,"%SP3REG%\KB4457188\Filelist\11","FileName",0,"w03a3409.dll"     ;OBSOLETE
+HKLM,"%SP3REG%\KB4457188\Filelist\11","Location",0,"%16425%"
+HKLM,"%SP3REG%\KB4457188\Filelist\11","Version",0,"5.2.3790.5233"
+HKLM,"%HFREG%\KB4457188","Backup Dir",0,""
+HKLM,"%HFREG%\KB4457188","Comments",0,"%SUPD% (KB4457188)"
+HKLM,"%HFREG%\KB4457188","Fix Description",0,"%SUPD% (KB4457188)"
+HKLM,"%HFREG%\KB4457188","Installed",0x10001,1
+HKLM,"%HFREG%\KB4457188","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB4457188","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB4457188","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB4457188","Valid",0x10001,1
+HKLM,"%HFREG%\KB4457188\File 1","Flags",0,""
+HKLM,"%HFREG%\KB4457188\File 1","New File",0,""
+HKLM,"%HFREG%\KB4457188\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB4457188\File 1","Old Link Date",0,""
+
+[KB4516878.AddReg]
+HKLM,"%SP3REG%\KB4516878","Description",0,"%SUPD% (KB4516878)"
+HKLM,"%SP3REG%\KB4516878","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB4516878","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB4516878","Type",0,"Update"
+HKLM,"%SP3REG%\KB4516878\Filelist\0","BuildCheckSum",0,"690f2"
+HKLM,"%SP3REG%\KB4516878\Filelist\0","BuildDate",0,"Wed Aug 08 09:18:22 2019"
+HKLM,"%SP3REG%\KB4516878\Filelist\0","FileName",0,"clfs.sys"
+HKLM,"%SP3REG%\KB4516878\Filelist\0","Location",0,"%10%\ServicePackFiles\ServicePackCache\Cmpnents\R2"
+HKLM,"%SP3REG%\KB4516878\Filelist\0","Version",0,"5.2.3790.6957"
+HKLM,"%SP3REG%\KB4516878\Filelist\1","BuildCheckSum",0,"690f2"
+HKLM,"%SP3REG%\KB4516878\Filelist\1","BuildDate",0,"Wed Aug 08 09:18:22 2019"
+HKLM,"%SP3REG%\KB4516878\Filelist\1","FileName",0,"clfs.sys"
+HKLM,"%SP3REG%\KB4516878\Filelist\1","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4516878\Filelist\1","Version",0,"5.2.3790.6957"
+HKLM,"%HFREG%\KB4516878","Backup Dir",0,""
+HKLM,"%HFREG%\KB4516878","Comments",0,"%SUPD% (KB4516878)"
+HKLM,"%HFREG%\KB4516878","Fix Description",0,"%SUPD% (KB4516878)"
+HKLM,"%HFREG%\KB4516878","Installed",0x10001,1
+HKLM,"%HFREG%\KB4516878","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB4516878","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB4516878","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB4516878","Valid",0x10001,1
+HKLM,"%HFREG%\KB4516878\File 1","Flags",0,""
+HKLM,"%HFREG%\KB4516878\File 1","New File",0,""
+HKLM,"%HFREG%\KB4516878\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB4516878\File 1","Old Link Date",0,""
+
+[KB4508401.AddReg]
+HKLM,"%SP3REG%\KB4508401","Description",0,"%SUPD% (KB4508401)"
+HKLM,"%SP3REG%\KB4508401","InstalledBy",0,"%NAME%"
+HKLM,"%SP3REG%\KB4508401","InstalledDate",0,"%UPVER%"
+HKLM,"%SP3REG%\KB4508401","Type",0,"Update"
+HKLM,"%SP3REG%\KB4508401\Filelist\0","BuildCheckSum",0,"74759"
+HKLM,"%SP3REG%\KB4508401\Filelist\0","BuildDate",0,"Thu Jun 13 13:55:26 2019"
+HKLM,"%SP3REG%\KB4508401\Filelist\0","FileName",0,"kdcsvc.dll"
+HKLM,"%SP3REG%\KB4508401\Filelist\0","Location",0,"%11%"
+HKLM,"%SP3REG%\KB4508401\Filelist\0","Version",0,"5.2.3790.6878"
+HKLM,"%HFREG%\KB4508401","Backup Dir",0,""
+HKLM,"%HFREG%\KB4508401","Comments",0,"%SUPD% (KB4508401)"
+HKLM,"%HFREG%\KB4508401","Fix Description",0,"%SUPD% (KB4508401)"
+HKLM,"%HFREG%\KB4508401","Installed",0x10001,1
+HKLM,"%HFREG%\KB4508401","Installed By",0,"%NAME%"
+HKLM,"%HFREG%\KB4508401","Installed On",0,"%UPVER%"
+HKLM,"%HFREG%\KB4508401","Service Pack",0x10001,3
+HKLM,"%HFREG%\KB4508401","Valid",0x10001,1
+HKLM,"%HFREG%\KB4508401\File 1","Flags",0,""
+HKLM,"%HFREG%\KB4508401\File 1","New File",0,""
+HKLM,"%HFREG%\KB4508401\File 1","New Link Date",0,""
+HKLM,"%HFREG%\KB4508401\File 1","Old Link Date",0,""
+
+[Strings]
+NAME    = "5eraph's Windows 2003 Addon"
+UPVER   = "v2019-08_1"
+HUPD    = "Hotfix for Windows Server 2003"
+SUPD    = "Security Update for Windows Server 2003"
+UPD     = "Update for Windows Server 2003"
+HFREG   = "SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix"
+SP3REG  = "SOFTWARE\Microsoft\Updates\Windows Server 2003\SP3"
